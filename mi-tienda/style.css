@@ -1,0 +1,212 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+nav {
+  grid-area: nav;
+  height: 73vh;
+}
+.menu {
+  color: #ffffff;
+  font: bold 70% Verdana, Arial, Helvetica;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+nav .menu a{
+  color: #0D5CAB;
+  text-decoration: none;
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}/* estilos a enlaces en sidebar menu */
+nav .menu a:active {
+  color: red;
+}/* al click color rojo para identificar */
+nav .menu a:focus, a:hover {
+  border-bottom: 1px solid;
+} /*  linea al link y cambio de mouse */
+
+section {
+  grid-area: section;
+  position: relative;
+  
+  
+}
+section .publicidad{
+height: 40%;
+width: 25%;
+margin-left: 3rem;
+margin-top: 3rem;
+
+
+}
+section .p{
+  height: 20%;
+  width: 10%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  
+  
+  }
+section form{
+  margin-left: 30%;
+  margin-top: 5%;
+
+}
+
+
+header {
+  grid-area: header;
+  
+
+
+    
+    }
+    header #logo{
+       margin-left: 5%;
+       margin-bottom: 150%;
+
+    }
+    header #barrabusqueda{
+      position:absolute; 
+      border-radius: 20vh;
+      width: 20%; 
+      height: 3%;
+      margin-left: 20%;
+      margin-top: 3%;
+        
+        
+        
+        
+    
+    
+    }
+    header #botonbuscar{
+      position:absolute;
+      width: 13%; 
+      height: 15%;
+      margin-left: 34%;
+      margin-top: 3%;
+        
+        
+    }  
+    header #linkCarrito{
+      position:absolute;
+      width: 20%; 
+      height: 25%;
+      margin-left: 65%;
+      margin-top: 3%;
+
+        
+       
+
+    }
+
+.icon {
+  grid-area: icon;
+  display: flex;
+  justify-content:space-evenly;
+  margin:2rem;
+  align-items:center;
+ 
+}
+
+
+footer {
+  grid-area: footer;
+}
+footer{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: flex-end;
+  
+  
+
+  }
+.impact{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h3{
+  color:#0D5CAB;
+}
+
+h1{
+  color: tomato;
+  margin-left: 23%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px ; /* separacion entre grids */
+    grid-template-columns: 20% auto;
+    grid-template-rows: 20vh auto;
+    grid-template-areas:
+    "header  header  header"
+    "nav section section"
+    "nav section section"
+    "icon  icon  icon"
+    "footer  footer  footer";
+    
+    background-color: #fff;
+    color: #444;
+  }
+
+
+.box {
+  background-color: white;
+  color:black;
+  border-radius: 5px;
+  padding: 25px;
+  font-size: 150%;
+}
+
+.imgscala:hover{
+  transition: all 1s;
+transform: scale(1.2,1.2);
+}
+
+.imgtraslade:active{
+  transition: all 1s;
+  transform:  scale(3) rotate(360deg);
+
+}
+      @keyframes un_efecto{
+  
+    0%{}
+
+  
+    50%{
+    transform: translate(80%, 0px) ;
+    }
+
+    100%{}
+
+
+
+}
+.un_efecto{
+  transition: all 4s;
+  animation-duration: 4s;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+}
+
+.tablas{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  height: 60vh;
+ 
+  
+
+
+}
+
+
